@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>BeFit | Login</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+  <div class="container">
+    <div class="row">
+
+      <div class="col s12 m6 offset-m3">
+        <div class="card">
+          <div class="card-content">
+            <div class="col s12 center-align">
+                <img src="./images/logo-inverse.png" class="brand-image center-align"alt="">
+            </div>
+        <span class="card-title col s12 center-align">Login</span>
+            <div class="row">
+              <!-- <form class="col s12">
+                <div class="row">
+                  <div class="input-field col s12">
+                    <input id="username" type="text" name="username" required>
+                    <label for="username">Username</label>
+                  </div>
+                  <div class="input-field col s12">
+                    <input id="password" type="password" name="password" required>
+                    <label for="password">Password</label>
+                  </div>
+                  <div class="col s12 center-align">
+                    <button class="btn waves-effect waves-light" id="login-btn" type="submit" name="action">Login</button>
+                  </div>
+                </div>
+              </form> -->
+              <form id="login-form" class="col s12">
+                <div class="row">
+                  <div class="input-field col s12">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                  </div>
+                  <div class="input-field col s12">
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" name="password" pattern="(?=.*\d)(?=.*[A-Z])(?=.*\W).{8,}" 
+                    title="Password must contain at least 8 characters, one capital letter, one number, and one special character" 
+                    required>
+                  </div>
+                  <div class="col s12 center-align">
+                    <button class="btn waves-effect waves-light" id="login-btn" type="submit">Login</button>
+                  </div>
+                  
+                </div>
+                
+              </form>
+              
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="./js/main.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+</body>
+</html>
